@@ -1,7 +1,7 @@
 # document-management-dashboard
 ###### <ins>Backend</ins>
 1. Java - Spring boot
-2. Database - Oracle 12c
+2. Database - Oracle 12c (optional)
 
 ###### <ins>Frontend</ins>
 1. Thymeleaf
