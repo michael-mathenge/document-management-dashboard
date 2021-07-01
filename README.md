@@ -46,8 +46,11 @@ The ***@Id*** annotation is inherited from javax.persistence.Id, indicating the 
 The ***@GeneratedValue*** annotation is to configure the way of increment of the specified column(field). For example when using Mysql, you may specify                      auto_increment in the definition of table to make it self-incremental, and then use `@GeneratedValue(strategy = GenerationType.IDENTITY)`
 
  `@Id
-  @SequenceGenerator(name="MySeq", sequenceName = "names_sequence", allocationSize = 1)      
+ 
+  @SequenceGenerator(name="MySeq", sequenceName = "names_sequence", allocationSize = 1)
+  
   @GeneratedValue(strategy =GenerationType.SEQUENCE, generator="MySeq")    
+  
   private Integer id;`
 
 
