@@ -1,7 +1,7 @@
 package com.example.controllers;
 
-import com.example.legal.models.Contract;
-import com.example.legal.services.ContractService;
+import com.example.models.Contract;
+import com.example.services.ContractService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -30,7 +30,6 @@ public class ContractController {
 
     @PostMapping("/contracts/addnew")
     public String addNewContract(Contract contract){
-        System.out.println("NEW ID => "+contract.getId()+", "+ " new contract name => "+contract.getContract_name());
             contractService.newContract(contract);
         return "redirect:/contracts";
     }
