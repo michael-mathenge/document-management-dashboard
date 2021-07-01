@@ -1,12 +1,12 @@
 # document-management-dashboard
-## <ins>Backend</ins>
+### <ins>Backend</ins>
 1. Java - Spring boot
 2. Database - Oracle 12c (optional)
 
 ### <ins>Frontend</ins>
 1. Thymeleaf
 
-###### <ins>Installation Instructions</ins>
+### <ins>Installation Instructions</ins>
 1. Create a [Maven](https://maven.apache.org/what-is-maven.html) spring boot application via this link [spring initializr](https://start.spring.io/) Add these dependencies:
 
         - spring-boot-starter-parent
@@ -46,7 +46,7 @@ The ***@Id*** annotation is inherited from javax.persistence.Id, indicating the 
 The ***@GeneratedValue*** annotation is to configure the way of increment of the specified column(field). For example when using Mysql, you may specify                      auto_increment in the definition of table to make it self-incremental, and then use `@GeneratedValue(strategy = GenerationType.IDENTITY)`
 
   
-###### <ins>Understanding Thymeleaf</ins>
+### <ins>Understanding Thymeleaf</ins>
 
 Thymeleaf is a **`template engine`**. A  **`template engine`** enables you to use static template files in your application. At runtime, the template engine  
 replaces variables in a template file with actual values, and transforms the template into an HTML file sent to the client.  
