@@ -30,6 +30,7 @@
         -services
         
 4. Understanding Java Spring logic
+
         #### @Controller classes serve as C from MVC. Note that the real controller in Spring MVC is DispatcherServlet that will use the specific @Controller class to handle the URL request.
 
         #### @Controller classes should only have access to @Service classes through interfaces. Similar, @Service classes should only have access to other @Service classes and for a specific set of @Repository classes through interfaces.
