@@ -36,7 +36,7 @@
 
       **@Service** classes should serve for your service layer. Here you should put your <ins>business logic</ins>. The service layer is there to provide logic to operate on the data sent to and from the DAO and the client.
 
-      **@Repository** classes should serve for your <ins>data access layer</ins>. Here you should put CRUD logic: insert, update, delete, select.
+      **@Repository** classes should serve for your <ins>data access layer</ins>. Here you should put CRUD logic:Create(insert), Read(select) Update, Delete, .
 
       **@Service**, **@Repository** and your **@entity** classes will be M from MVC. JSP and other view technologies (e.g. JSP, Thymeleaf e.t.c.) will conform V from MVC.
 
