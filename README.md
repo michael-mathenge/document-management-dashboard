@@ -41,7 +41,8 @@
       **@Service**, **@Repository** and your **@entity** classes will be M from MVC. JSP and other view technologies (e.g. JSP, Thymeleaf e.t.c.) will conform V from MVC.
 
 n/b
-The ***@Id*** annotation is inherited from javax.persistence.Id, indicating the member field below is the primary key of current entity. Hence your Hibernate and spring framework as well  can do some reflect works based on this annotation.
+
+The ***@Id*** annotation in the model classes is inherited from javax.persistence.Id, indicating the member field below is the primary key of current entity. Hence your Hibernate and spring framework as well  can do some reflect works based on this annotation.
 
 The ***@GeneratedValue*** annotation is to configure the way of increment of the specified column(field). For example when using Mysql, you may specify                      auto_increment in the definition of table to make it self-incremental, and then use `@GeneratedValue(strategy = GenerationType.IDENTITY)`
 
