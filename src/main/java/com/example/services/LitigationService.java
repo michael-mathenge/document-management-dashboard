@@ -1,4 +1,4 @@
-package com.example.legal.services;
+package com.example.<package_name>.services;
 
 import org.springframework.stereotype.Service;
 
