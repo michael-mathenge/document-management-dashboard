@@ -1,4 +1,4 @@
-package com.example.legal.models;
+package com.example.<package_name>.models
 
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
@@ -8,7 +8,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 
-@MappedSuperclass // An abstract class to inherit other objects. I has no table
+@MappedSuperclass // An abstract class to inherit other objects. it has no table
 @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
 public class CommonObject {
 
