@@ -3,10 +3,10 @@
 1. Java - Spring boot
 2. Database - Oracle 12c
 
-######<ins>Frontend</ins>
+###### <ins>Frontend</ins>
 1. Thymeleaf
 
-######<ins>Installation Instructions</ins>
+###### <ins>Installation Instructions</ins>
 1. Create a [Maven](https://maven.apache.org/what-is-maven.html) spring boot application via this link [spring initializr](https://start.spring.io/)
         Add these dependencies:
         - spring-boot-starter-parent
