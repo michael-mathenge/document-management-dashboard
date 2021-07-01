@@ -1,4 +1,4 @@
-package com.example.legal.models;
+package com.example.<package_name>.models;
 
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
@@ -12,18 +12,15 @@ import javax.persistence.Table;
 import java.sql.Date;
 
 @Entity
-@Table(name = "TM_KPOSB_LITIGATIONS")
+@Table(name = "<TABLE_NAME>")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
 public class Litigation {
     @Id
+    @SequenceGenerator(name="sequence_name_b", sequenceName = "<sequence_name_in_database>", allocationSize = 1)
+    @GeneratedValue(strategy =GenerationType.SEQUENCE, generator="sequence_name_b")
     private Integer id;
-    private String parties;
-    private Date instruction_date;
-    private String handling_advocate;
-    private String status;
-    private String claim_value;
-    private Boolean witness_contacted;
+    
 }
