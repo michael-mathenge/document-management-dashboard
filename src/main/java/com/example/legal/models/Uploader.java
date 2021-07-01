@@ -1,4 +1,4 @@
-package com.example.legal.models;
+package com.example.<package_name>.models
 
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
@@ -12,26 +12,12 @@ import javax.persistence.*;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "uploader_id")
+@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
 public class Uploader {
 
     @Id
+    @SequenceGenerator(name="sequence_name_c", sequenceName = "<sequence_name_in_database>", allocationSize = 1)
+    @GeneratedValue(strategy =GenerationType.SEQUENCE, generator="sequence_name_c")
     private Integer id;
 
-//    @ManyToOne
-//    @JoinColumn(name="contractid", insertable = false, updatable = false)
-//    private Contract contract;
-//
-//    private Integer contractid;
-
-    @ManyToOne(optional = false)
-    private Contract uploaderid;
-
-    public Contract getUploaderid() {
-        return uploaderid;
-    }
-
-    public void setUploaderid(Contract uploaderid) {
-        this.uploaderid = uploaderid;
-    }
 }
