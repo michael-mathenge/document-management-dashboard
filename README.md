@@ -23,7 +23,7 @@
         File -> New Project from existing sources -> navigate to unzipped folder until you get to POM.xml then open that.
 
 4. Navigate to your group package location e.g. (src/main/java/com/mike/<project_name>), `com.mike` - right-click - new - package - add the package name;
-        now it will appear like e.g. `com.mike.controllers`. Open the following packages using the above method.
+        now it will appear like e.g. `com.mike.controllers`. Create the following packages using the above method.
         
         -models
         -controllers
