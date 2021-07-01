@@ -1,4 +1,4 @@
-package com.example.legal.models;
+package com.example.<package_name>.models;
 
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
