@@ -12,36 +12,15 @@ import java.util.Collection;
 import java.util.List;
 
 @Entity
-@Table(name = "TM_KPOSB_CONTRACTS")
+@Table(name = "<TABLE_NAME>")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
 public class Contract {
     @Id
-    @SequenceGenerator(name="ContrSeq", sequenceName = "contracts_sequence", allocationSize = 1)
-    @GeneratedValue(strategy =GenerationType.SEQUENCE, generator="ContrSeq")
+    @SequenceGenerator(name="<sequence_name_a>", sequenceName = "<sequence_name_in_database>", allocationSize = 1)
+    @GeneratedValue(strategy =GenerationType.SEQUENCE, generator="<sequence_name_a>")
     private Integer id;
-    private String contract_name;
-    private Date start_date;
-    private Date end_date;
-//    private Boolean contract_expired;
-    private Boolean warning_sent;
-    private String parties;
-    private String nature;
-//    private String scope;
-    private Integer term;
-//    private Date renewal_date;
-    private String consideration;
-    private String status;
-//    @OneToMany(fetch = FetchType.EAGER, mappedBy = "uploaderid")
-//    private Collection<Uploader> contractid;
-//
-//    public Collection<Uploader> getContractid() {
-//        return contractid;
-//    }
-//
-//    public void setContractid(Collection<Uploader> contractid) {
-//        this.contractid = contractid;
-//    }
+    
 }
