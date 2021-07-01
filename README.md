@@ -3,7 +3,7 @@
 1. Java - Spring boot
 2. Database - Oracle 12c (optional)
 
-###### <ins>Frontend</ins>
+### <ins>Frontend</ins>
 1. Thymeleaf
 
 ###### <ins>Installation Instructions</ins>
