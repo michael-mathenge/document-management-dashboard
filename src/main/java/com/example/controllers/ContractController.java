@@ -1,4 +1,4 @@
-package com.example.legal.controllers;
+package com.example.controllers;
 
 import com.example.legal.models.Contract;
 import com.example.legal.services.ContractService;
